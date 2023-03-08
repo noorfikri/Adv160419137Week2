@@ -39,6 +39,7 @@ class GameFragment : Fragment() {
             var txtAnswer = view.findViewById<TextView>(R.id.txtAnswer).text.toString()
             if(txtAnswer.toInt() == num1 + num2){
                 score++
+                generateNum(view)
             }else{
                 val action = GameFragmentDirections.actionResultFragment(score)
                 Navigation.findNavController(it).navigate(action)
