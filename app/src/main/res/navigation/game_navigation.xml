@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/actionGameFragment"
-            app:destination="@id/gameFragment" />
+            app:destination="@id/gameFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
